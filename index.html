@@ -1,0 +1,369 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Craigslist Services</title>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+      <div class="header-content">
+        <img src="images/logo.png" alt="Craigslist Logo" />
+        <form class="search-form">
+          <input type="search" placeholder="Search" />
+          <button type="submit">Search</button>
+        </form>
+        <div class="header-options">
+            <select class="city-selector">
+                <option value="ny">Nearby cl</option>
+                <option value="la">Los Angeles</option>
+                <option value="albany">Albany</option>
+                <option value="allentown">Allentown</option>
+                <option value="baltimore">Baltimore</option>
+                <option value="binghamton">Binghamton</option>
+                <option value="catskills">Catskills</option>
+                <option value="centralnj">Central NJ</option>
+                <option value="delaware">Delaware</option>
+                <option value="easternct">Eastern CT</option>
+                <option value="easternshore">Eastern Shore</option>
+                <option value="harrisburg">Harrisburg</option>
+                <option value="hartford">Hartford</option>
+                <option value="hudsonvalley">Hudson Valley</option>
+                <option value="jerseyshore">Jersey Shore</option>
+                <option value="lancaster">Lancaster</option>
+                <option value="longisland">Long Island</option>
+                <option value="newhaven">New Haven</option>
+            </select>
+            
+
+              <select class="language-selector">
+                <option value="english">English</option>
+                <option value="spanish">Español</option>
+                <option value="french">Français</option>
+                <option value="german">Deutsch</option>
+                <option value="italian">Italiano</option>
+                <option value="portuguese">Português</option>
+                <option value="japanese">日本語</option>
+                <option value="korean">한국어</option>
+                <option value="chinese">中文</option>
+              </select>
+              <a href="#" class="create-posting-link">Create a Posting</a>
+              <a href="#" class="my-account-button">My Account</a>
+              
+        </div>
+      </div>
+    </header>
+  
+    <div class="left-sidebar">
+    <div id="calendar-container"></div>
+      <ul>
+        <li><a href="#">Craigslist app</a></li>
+        <li><a href="#">Avoid scams & fraud</a></li>
+        <li><a href="#">Help, Fag, Abuse, Legal</a></li>
+        <li><a href="#">Personal safety tips</a></li>
+        <li><a href="#">Terms of use</a></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">System status</a></li>
+      </ul>
+    </div>
+    <div class="right-sidebar">
+        <div class="sidebar-content">
+            <ul>
+                <li><a href="#">About Craigslist</a></li>
+                <li><a href="#">Craigslist is hiring</a></li>
+                <li><a href="#">Craigslist open source</a></li>
+                <li><a href="#">Craigslist blog</a></li>
+                <li><a href="#">Best-of-craigslist</a></li>
+                <li><a href="#">Craigslist joe</a></li>
+                <li><a href="#">Craig newmark</a></li>
+                <li><a href="#">Philanthropies</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-section">
+            <div class="select-container">
+                <select id="language-selector-sidebar" name="language">
+                    <option value="hudsonvalley">-- COUNTRY --</option>
+                    <option value="jerseyshore">Nearby CL</option>
+                    <option value="jerseyshore">US Cities</option>
+                    <option value="lancaster">US States</option>
+                    <option value="longisland">Canada</option>
+                    <option value="newhaven">CL Worldwide</option>
+                </select>
+            </div>
+            <div class="select-container">
+                <select id="city-selector-sidebar" name="city">
+                    <option value="la">-- THE CITY --</option>
+                    <option value="easternct">Eastern CT</option>
+                    <option value="easternshore">Eastern Shore</option>
+                    <option value="harrisburg">Harrisburg</option>
+                    <option value="hartford">Hartford</option>
+                    <option value="hudsonvalley">Hudson Valley</option>
+                    <option value="jerseyshore">Jersey Shore</option>
+                    <option value="lancaster">Lancaster</option>
+                    <option value="longisland">Long Island</option>
+                    <option value="newhaven">New Haven</option>
+                </select>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="images/oslo.jpg" alt="Map" />
+          </div>
+    </div>
+    
+
+
+  <main>
+    <div class="row">
+        <section>
+            <header class="section-header"><b>Housing</b></header>
+            <ul>
+                <li><a href="#">Apts / Housing</a></li>
+                <li><a href="#">Housing Swap</a></li>
+                <li><a href="#">Housing Wanted</a></li>
+                <li><a href="#">Office / Commercial</a></li>
+                <div class="more">
+                    <span class="more-title">More &#10219;&#10219;</span>
+                    <ul class="more-options">
+                        <li><a href="#">Parking / Storage</a></li>
+                        <li><a href="#">Real Estate for Sale</a></li>
+                        <li><a href="#">Rooms / Shared</a></li>
+                        <li><a href="#">Rooms Wanted</a></li>
+                        <li><a href="#">Sublets / Temporary</a></li>
+                        <li><a href="#">Vacation Rentals</a></li>
+                        <span class="more-title">More &#10219;&#10219;&#10219;</span>
+                    </ul>
+                </div>
+            </ul>
+        </section>
+        
+          
+        <section>
+            <header class="section-header"><b>Community</b></header>
+            <ul>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">Artists</a></li>
+                <li><a href="#">Childcare</a></li>
+                <li><a href="#">Classes</a></li>
+                <div class="more">
+                    <span class="more-title">More &#10219;&#10219;</span>
+                    <ul class="more-options">
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">General</a></li>
+                        <li><a href="#">Groups</a></li>
+                        <li><a href="#">Local News</a></li>
+                        <li><a href="#">Lost+Found</a></li>
+                        <li><a href="#">Missed Connections</a></li>
+                        <li><a href="#">Musicians</a></li>
+                        <li><a href="#">Pets</a></li>
+                        <li><a href="#">Politics</a></li>
+                        <li><a href="#">Rants & Raves</a></li>
+                        <li><a href="#">Rideshare</a></li>
+                        <li><a href="#">Volunteers</a></li>
+                        <span class="more-title">More &#10219;&#10219;&#10219;</span>
+                    </ul>
+                </div>
+            </ul>
+        </section>
+        
+        <section>
+            <header class="section-header"><b>Services</b></header>
+            <ul>
+                <li><a href="#">Automotive</a></li>
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">Cell/Mobile</a></li>
+                <li><a href="#">Computer</a></li>
+                <div class="more">
+                    <span class="more-title">More &#10219;&#10219;</span>
+                    <ul class="more-options">
+                        <li><a href="#">Creative</a></li>
+                        <li><a href="#">Cycle</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Farm+Garden</a></li>
+                        <li><a href="#">Financial</a></li>
+                        <li><a href="#">Health/Well</a></li>
+                        <li><a href="#">Household</a></li>
+                        <li><a href="#">Labor/Move</a></li>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Lessons</a></li>
+                        <li><a href="#">Marine</a></li>
+                        <li><a href="#">Pet</a></li>
+                        <li><a href="#">Real Estate</a></li>
+                        <li><a href="#">Skilled Trade</a></li>
+                        <li><a href="#">Sm Biz Ads</a></li>
+                        <li><a href="#">Travel/Vac</a></li>
+                        <li><a href="#">Write/Ed/Tran</a></li>
+                        <span class="more-title">More &#10219;&#10219;&#10219;</span>
+                    </ul>
+                </div>
+            </ul>
+        </section>
+        
+        <section>
+            <header class="section-header"><b>Discussion Forums</b></header>
+            <ul>
+                <li><a href="#">Apple</a></li>
+                <li><a href="#">Arts</a></li>
+                <li><a href="#">Atheist</a></li>
+                <li><a href="#">Autos</a></li>
+                <div class="more">
+                    <span class="more-title">More &#10219;&#10219;</span>
+                    <ul class="more-options">
+                        <li><a href="#">Beauty</a></li>
+                        <li><a href="#">Bikes</a></li>
+                        <li><a href="#">Celebs</a></li>
+                        <li><a href="#">Comp</a></li>
+                        <li><a href="#">Cosmos</a></li>
+                        <li><a href="#">Diet</a></li>
+                        <li><a href="#">Divorce</a></li>
+                        <li><a href="#">Dying</a></li>
+                        <li><a href="#">Eco</a></li>
+                        <li><a href="#">Feedbk</a></li>
+                        <li><a href="#">Film</a></li>
+                        <span class="more-title">More &#10219;&#10219;&#10219;</span>
+                    </ul>
+                </div>
+            </ul>
+        </section>
+        
+    </div>
+    <div class="row">
+        <section>
+            <header class="section-header"><b>For Sale</b></header>
+            <ul>
+                <li><a href="#">Antiques</a></li>
+                <li><a href="#">Appliances</a></li>
+                <li><a href="#">Arts+Crafts</a></li>
+                <li><a href="#">Atv/Utv/Sno</a></li>
+                <div class="more">
+                    <span class="more-title">More &#10219;&#10219;</span>
+                    <ul class="more-options">
+                        <li><a href="#">Auto Parts</a></li>
+                        <li><a href="#">Aviation</a></li>
+                        <li><a href="#">Baby+Kid</a></li>
+                        <li><a href="#">Barter</a></li>
+                        <li><a href="#">Beauty+Hlth</a></li>
+                        <li><a href="#">Bike Parts</a></li>
+                        <li><a href="#">Bikes</a></li>
+                        <li><a href="#">Boat Parts</a></li>
+                        <li><a href="#">Boats</a></li>
+                        <li><a href="#">Books</a></li>
+                        <li><a href="#">Business</a></li>
+                        <span class="more-title">More &#10219;&#10219;&#10219;</span>
+                    </ul>
+                </div>
+            </ul>
+        </section>
+        
+        <section>
+            <header class="section-header"><b>Jobs</b></header>
+            <ul>
+                <li><a href="#">Accounting+Finance</a></li>
+                <li><a href="#">Admin / Office</a></li>
+                <li><a href="#">Arch / Engineering</a></li>
+                <li><a href="#">Art / Media / Design</a></li>
+                <div class="more">
+                    <span class="more-title">More &#10219;&#10219;</span>
+                    <ul class="more-options">
+                        <li><a href="#">Biotech / Science</a></li>
+                        <li><a href="#">Business / Mgmt</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Etc / Misc</a></li>
+                        <li><a href="#">Food / Bev / Hosp</a></li>
+                        <li><a href="#">General Labor</a></li>
+                        <li><a href="#">Government</a></li>
+                        <span class="more-title">More &#10219;&#10219;&#10219;</span>
+                    </ul>
+                </div>
+            </ul>
+        </section>
+        <section>
+            <header class="section-header"><b>Gigs</b></header>
+            <ul>
+                <li><a href="#">Computer</a></li>
+                <li><a href="#">Creative</a></li>
+                <li><a href="#">Crew</a></li>
+                <li><a href="#">Domestic</a></li>
+                <div class="more">
+                    <span class="more-title">More &#10219;&#10219;</span>
+                    <ul class="more-options">
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Labor</a></li>
+                        <li><a href="#">Talent</a></li>
+                        <li><a href="#">Writing</a></li>
+                        <span class="more-title">More &#10219;&#10219;&#10219;</span>
+                    </ul>
+                </div>
+            </ul>
+        </section>
+        <section>
+            <header class="section-header"><b>Resumes</b></header>
+                    <span class="more-title">More &#10219;&#10219;</span>
+                    
+        </section>
+    </div>
+  </main>
+</body>
+
+<footer>
+    <p>&copy; 2023 Craigslist <a href="#">Help</a>  <a href="#">Safety</a> <a href="#">Privacy</a> <a
+            href="#">Feedback</a>  <a href="#">Terms</a>  <a href="#">About</a> <a href="#">Craigslist
+            App</a> <a href="#">CL is hiring</a> <a href="#">Sitemap</a></p>
+</footer>
+
+
+
+
+<script>
+    $(document).ready(function () {
+      $("#calendar-container").datepicker({
+        showOtherMonths: true,
+        selectOtherMonths: true,
+      });
+    });
+  </script>
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var leftSidebar = document.querySelector(".left-sidebar");
+      var rightSidebar = document.querySelector(".right-sidebar");
+      var overlay = document.querySelector(".overlay");
+      var main = document.querySelector("main");
+      var header = document.querySelector("header");
+      var footer = document.querySelector("footer");
+  
+      function showOverlay() {
+        overlay.style.opacity = "1";
+        overlay.style.pointerEvents = "auto";
+        main.classList.add("blur");
+        header.classList.add("blur");
+        footer.classList.add("blur");
+      }
+  
+      function hideOverlay() {
+        overlay.style.opacity = "0";
+        overlay.style.pointerEvents = "none";
+        main.classList.remove("blur");
+        header.classList.remove("blur");
+        footer.classList.remove("blur");
+      }
+  
+      leftSidebar.addEventListener("mouseover", showOverlay);
+      rightSidebar.addEventListener("mouseover", showOverlay);
+      leftSidebar.addEventListener("mouseout", hideOverlay);
+      rightSidebar.addEventListener("mouseout", hideOverlay);
+    });
+  </script>
+
+
+  
+</html>
